@@ -67,8 +67,7 @@ const Experiences = () => {
           </div>
         </div>
         {/* Row - Two */}
-        <div className="flex flex-col gap-3 md:flex-row md:gap-6 lg:gap-10 mx-auto">
-          {/* Box - Three */}
+        {/* <div className="flex flex-col gap-3 md:flex-row md:gap-6 lg:gap-10 mx-auto">
           <div className="rounded-lg border max-w-md">
             <div className="bg-blue-lighest flex justify-between md:gap-2 p-3 lg:p-4">
               <div className="flex flex-col">
@@ -95,7 +94,7 @@ const Experiences = () => {
               </p>
             </div>
           </div>
-        </div>
+        </div> */}
       </div>
     </div>
   );
