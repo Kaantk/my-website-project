@@ -13,7 +13,7 @@ const Navbar = ({ isScroll }) => {
 
   return (
     <>
-      <nav className="flex items-center justify-between py-2 px-4 md:py-4 md:px-8 lg:py-5 max-w-7xl mx-auto">
+      <nav className="flex items-center justify-between py-4 px-6 md:py-4 md:px-8 lg:py-5 max-w-7xl mx-auto">
         <a href="#" className="text-xl font-bold">
           Logo
         </a>
@@ -49,7 +49,7 @@ const Navbar = ({ isScroll }) => {
           isOpen ? "max-h-56" : "max-h-0"
         } ${isScroll > 46 ? "bg-white drop-shadow-sm" : "bg-blue-lighest"}`}
       >
-        <div className="px-4 pb-4 pt-2 md:px-8 md:pt-1 md:pb-4 border-b drop-shadow-2xl">
+        <div className="px-6 pb-4 pt-2 md:px-8 md:pt-1 md:pb-4 border-b drop-shadow-2xl">
           <ol className="font-semibold text-black-lightest flex flex-col gap-2">
             {menuItems.map((item) => (
               <li key={item.id}>
