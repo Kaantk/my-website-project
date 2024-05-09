@@ -8,10 +8,10 @@ const Contact = () => {
   return (
     <div
       id="contact"
-      className="p-6 flex flex-col gap-5 scroll-mt-10 md:scroll-mt-16"
+      className="p-6 flex flex-col gap-5 scroll-mt-14 md:scroll-mt-16"
     >
       <h2 className="font-semibold text-2xl text-center">İletişim</h2>
-      <div className="flex flex-col gap-5 md:flex-row mx-auto">
+      <div className="flex flex-col gap-5 md:flex-row mx-auto ">
         <Formik
           validationSchema={ContactValidation}
           initialValues={{
@@ -25,7 +25,7 @@ const Contact = () => {
           }}
         >
           {({ isValid, dirty, isSubmitting }) => (
-            <Form className="flex flex-col gap-4 text-black-light bg-blue-lighest rounded-lg p-5 md:min-w-80 lg:p-7 lg:min-w-[500px]">
+            <Form className="flex flex-col gap-4 text-black-light bg-blue-lighest rounded-lg p-5 md:min-w-80 lg:p-7 lg:min-w-[500px] shadow-lg">
               <div className="flex flex-col gap-1 font-semibold">
                 <label htmlFor="fullName" className="text-sm lg:text-base">
                   Ad Soyad

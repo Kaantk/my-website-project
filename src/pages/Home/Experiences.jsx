@@ -6,7 +6,7 @@ const Experiences = () => {
   return (
     <div
       id="experiences"
-      className="p-6 flex flex-col gap-5 lg:max-w-7xl mx-auto scroll-mt-10 md:scroll-mt-16"
+      className="p-6 flex flex-col gap-5 lg:max-w-7xl mx-auto scroll-mt-14 md:scroll-mt-16"
     >
       {/* Title */}
       <div>
@@ -17,9 +17,9 @@ const Experiences = () => {
       {/* Content */}
       <div className="flex flex-col gap-3">
         {/* Row - One */}
-        <div className="flex flex-col gap-3 md:flex-row md:gap-6 lg:gap-10 mx-auto">
+        <div className="flex flex-col gap-3 md:flex-row md:gap-6 lg:gap-10 mx-auto ">
           {/* Box - One */}
-          <div className="rounded-lg border max-w-md">
+          <div className="rounded-lg border max-w-md md:max-w-[340px] lg:max-w-[500px] shadow-lg">
             <div className="bg-blue-lighest flex justify-between md:gap-2 p-3 lg:p-4">
               <div className="flex flex-col">
                 <h4 className="font-semibold lg:text-lg">
@@ -48,7 +48,7 @@ const Experiences = () => {
             </div>
           </div>
           {/* Box - Two */}
-          <div className="rounded-lg border max-w-md">
+          <div className="rounded-lg border max-w-md md:max-w-[340px] lg:max-w-[500px] shadow-lg">
             <div className="bg-blue-lighest flex justify-between md:gap-2 p-3 lg:p-4">
               <div className="flex flex-col">
                 <h4 className="font-semibold lg:text-lg">
