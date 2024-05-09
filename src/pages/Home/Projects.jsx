@@ -1,4 +1,5 @@
 import React from "react";
+import BrandColors from "~/assets/images/static/brandColors.png";
 
 const Projects = () => {
   return (
@@ -10,11 +11,7 @@ const Projects = () => {
       </div>
       <div className="flex flex-col gap-3 mx-auto md:flex-row flex-wrap justify-evenly">
         <figure className="cursor-pointer relative shadow-md rounded">
-          <img
-            src="/src/assets/images/static/brandColors.png"
-            className="rounded w-72 h-36"
-            alt="Random"
-          />
+          <img src={BrandColors} className="rounded w-72 h-36" alt="Random" />
           <figcaption className="absolute bg-[#d0cdcd9e] w-full p-1 text-center bottom-0 transform duration-300 hover:-translate-y-6">
             <h4 className="font-semibold">REACT</h4>
             <p className="font-semibold text-sm">Brand Colors Clone</p>
