@@ -1,6 +1,5 @@
 import React from "react";
 import { FaArrowRight } from "react-icons/fa";
-import { Link } from "react-router-dom";
 import MediaIcons from "~/components/MediaIcons";
 import Illustrations from "~/assets/images/illustrations.svg";
 import Maker from "~/assets/images/maker.svg";
@@ -36,11 +35,9 @@ const Hero = () => {
           </HashLink>
         </div>
       </div>
-      {/* <div className="bg-wave-pattern h-20 w-full"></div> */}
-      <div
-        className="h-20 w-full"
-        style={{ backgroundImage: `url(${Wave})` }}
-      ></div>
+      <div>
+        <img src={Wave} alt="Wave Background" className="w-full h-20" />
+      </div>
     </>
   );
 };
