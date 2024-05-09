@@ -1,5 +1,6 @@
 import React from "react";
 import BrandColors from "~/assets/images/static/brandColors.png";
+import TwitterClone from "~/assets/images/static/twitterClone.jpg";
 
 const Projects = () => {
   return (
@@ -26,11 +27,7 @@ const Projects = () => {
           </figcaption>
         </figure>
         <figure className="cursor-pointer relative">
-          <img
-            src="/src/assets/images/static/twitterClone.jpg"
-            className="rounded w-72 h-36"
-            alt="Random"
-          />
+          <img src={TwitterClone} className="rounded w-72 h-36" alt="Random" />
           <figcaption className="absolute bg-[#d0cdcd9e] w-full p-1 text-center bottom-0 transform duration-300 hover:-translate-y-6">
             <h4 className="font-semibold">REACT</h4>
             <p className="font-semibold text-sm">Twitter Clone</p>

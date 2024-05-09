@@ -1,4 +1,5 @@
 import React from "react";
+import User from "~/assets/images/static/user.svg";
 
 const About = () => {
   return (
@@ -33,7 +34,7 @@ const About = () => {
           </div>
         </div>
       </div>
-      <img src="/src/assets/images/static/user.svg" alt="Kaan Tetik" />
+      <img src={User} alt="Kaan Tetik" />
     </div>
   );
 };

@@ -2,13 +2,15 @@ import React from "react";
 import { FaArrowRight } from "react-icons/fa";
 import { Link } from "react-router-dom";
 import MediaIcons from "~/components/MediaIcons";
+import Illustrations from "~/assets/images/illustrations.svg";
+import Maker from "~/assets/images/maker.svg";
 
 const Hero = () => {
   return (
     <>
       <div className="hero-container bg-blue-lighest pb-2 flex flex-col items-center md:pb-0 md:flex-row md:items-center md:justify-center md:gap-10 lg:gap-28">
         <img
-          src="/src/assets/images/illustrations.svg"
+          src={Illustrations}
           alt="illustrations"
           className="w-3/4 md:w-2/5 lg:w-2/5 xl:w-1/4"
         />
@@ -17,11 +19,7 @@ const Hero = () => {
           <p className="text-xl font-light ">MERHABA!</p>
           <h1 className="mb-4 lg:mb-6">
             <b className="text-2xl font-bold lg:text-4xl">Ben Kaan Tetik</b>
-            <img
-              src="/src/assets/images/maker.svg"
-              alt="maker"
-              className="ml-24"
-            />
+            <img src={Maker} alt="maker" className="ml-24" />
           </h1>
           <p className="text-lg lg:text-xl">FRONTEND JUNIOR DEVELOPER</p>
           <MediaIcons />
@@ -36,6 +34,11 @@ const Hero = () => {
         </div>
       </div>
       <div className="bg-wave-pattern h-20 w-full"></div>
+      {/* <div className={`bg-[url("${Wave}")] h-20 w-full`}></div> */}
+      {/* <div
+        className="h-20 w-full"
+        style={{ backgroundImage: url(`${Wave}`) }}
+      ></div> */}
     </>
   );
 };

@@ -1,4 +1,6 @@
 import React from "react";
+import Bank from "~/assets/images/bank.svg";
+import Teachering from "~/assets/images/teachering.svg";
 
 const Experiences = () => {
   return (
@@ -28,7 +30,7 @@ const Experiences = () => {
                 </span>
               </div>
               <img
-                src="/src/assets/images/bank.svg"
+                src={Bank}
                 alt="Bank Card"
                 className="w-24 lg:w-28 max-h-[72px]"
               />
@@ -53,7 +55,7 @@ const Experiences = () => {
                 <span className="text-sm text-black-lightest">2022 - 2023</span>
               </div>
               <img
-                src="/src/assets/images/teachering.svg"
+                src={Teachering}
                 alt="Bank Card"
                 className="w-24 lg:w-28 max-h-[72px]"
               />
