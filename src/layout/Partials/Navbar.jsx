@@ -53,7 +53,13 @@ const Navbar = ({ isScroll }) => {
           <ol className="font-semibold text-black-lightest flex flex-col gap-2">
             {menuItems.map((item) => (
               <li key={item.id}>
-                <HashLink to={item.href} smooth={true} duration={500}>
+                <HashLink
+                  to={item.href}
+                  smooth={true}
+                  duration={500}
+                  onClick={() => setIsOpen(false)}
+                  className="block"
+                >
                   {item.title}
                 </HashLink>
               </li>
