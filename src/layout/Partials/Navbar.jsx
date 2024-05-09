@@ -5,10 +5,10 @@ import { HashLink } from "react-router-hash-link";
 const Navbar = ({ isScroll }) => {
   const [isOpen, setIsOpen] = useState(false);
   const menuItems = [
-    { id: 1, title: "Hakkında", link: "#about", href: "/hakkında" },
-    { id: 2, title: "Deneyim", link: "#experiences", href: "/deneyim" },
-    { id: 3, title: "Projelerim", link: "#projects", href: "/projelerim" },
-    { id: 4, title: "İletişim", link: "#contact", href: "/referanslarım" },
+    { id: 1, title: "Hakkında", href: "#about" },
+    { id: 2, title: "Tecrübelerim", href: "#experiences" },
+    { id: 3, title: "Projelerim", href: "#projects" },
+    { id: 4, title: "İletişim", href: "#contact" },
   ];
 
   return (
@@ -31,9 +31,9 @@ const Navbar = ({ isScroll }) => {
           {menuItems.map((item) => (
             <li key={item.id}>
               <HashLink
-                to={item.link}
+                to={item.href}
                 smooth={true}
-                duration={500} // 500ms sürede kaydırma
+                duration={500}
                 className="border-transparent hover:border-blue-dark hover:border-b-2 transition-all duration-100 ease-in-out hover:text-blue-dark"
               >
                 {item.title}
@@ -53,7 +53,9 @@ const Navbar = ({ isScroll }) => {
           <ol className="font-semibold text-black-lightest flex flex-col gap-2">
             {menuItems.map((item) => (
               <li key={item.id}>
-                <HashLink to={item.href}>{item.title}</HashLink>
+                <HashLink to={item.href} smooth={true} duration={500}>
+                  {item.title}
+                </HashLink>
               </li>
             ))}
           </ol>

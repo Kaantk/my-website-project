@@ -6,7 +6,10 @@ import classNames from "classnames";
 
 const Contact = () => {
   return (
-    <div id="contact" className="p-6 flex flex-col gap-5">
+    <div
+      id="contact"
+      className="p-6 flex flex-col gap-5 scroll-mt-10 md:scroll-mt-16"
+    >
       <h2 className="font-semibold text-2xl text-center">İletişim</h2>
       <div className="flex flex-col gap-5 md:flex-row mx-auto">
         <Formik

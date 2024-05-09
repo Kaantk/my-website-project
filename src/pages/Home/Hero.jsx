@@ -4,6 +4,8 @@ import { Link } from "react-router-dom";
 import MediaIcons from "~/components/MediaIcons";
 import Illustrations from "~/assets/images/illustrations.svg";
 import Maker from "~/assets/images/maker.svg";
+import Wave from "~/assets/images/wave.svg";
+import { HashLink } from "react-router-hash-link";
 
 const Hero = () => {
   return (
@@ -24,16 +26,21 @@ const Hero = () => {
           <p className="text-lg lg:text-xl">FRONTEND JUNIOR DEVELOPER</p>
           <MediaIcons />
           {/* Form Link */}
-          <Link
+          <HashLink
+            to="#contact"
             href="#"
             className="inline-flex items-center justify-center gap-2 shadow-lg bg-blue-dark hover:bg-opacity-80 text-white font-semibold py-2 px-7 rounded-full transition-all ease-in-out duration-300 transform hover:-translate-y-1"
           >
             Bana Ulaşın
             <FaArrowRight className="text-lg" />
-          </Link>
+          </HashLink>
         </div>
       </div>
-      <div className="bg-wave-pattern h-20 w-full"></div>
+      {/* <div className="bg-wave-pattern h-20 w-full"></div> */}
+      <div
+        className="h-20 w-full"
+        style={{ backgroundImage: `url(${Wave})` }}
+      ></div>
     </>
   );
 };
