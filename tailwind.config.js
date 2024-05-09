@@ -13,6 +13,9 @@ export default {
           light: "#1f1f1f",
           lightest: "#000000cc",
         },
+        // white: {
+        //   lighest: "#fdfdfd9e",
+        // },
       },
       backgroundImage: {
         "wave-pattern": "url('./src/assets/images/wave.svg')",

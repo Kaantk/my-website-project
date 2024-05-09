@@ -23,7 +23,7 @@ const MainLayout = () => {
     <>
       <header
         className={`fixed transition-all ease-in-out duration-700 transform top-0 w-full z-10  ${
-          isScroll > 46 ? "bg-white drop-shadow-sm" : "bg-blue-lighest "
+          isScroll > 46 ? "bg-white drop-shadow-md" : "bg-blue-lighest "
         }`}
       >
         <Navbar isScroll={isScroll} />
