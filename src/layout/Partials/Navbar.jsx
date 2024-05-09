@@ -1,16 +1,14 @@
 import React, { useState } from "react";
 import { IoMenu } from "react-icons/io5";
-import { Link } from "react-router-dom";
+import { HashLink } from "react-router-hash-link";
 
 const Navbar = ({ isScroll }) => {
   const [isOpen, setIsOpen] = useState(false);
   const menuItems = [
-    { id: 1, title: "Hakkında", href: "/hakkında" },
-    { id: 2, title: "Hizmetler", href: "/hizmetler" },
-    { id: 3, title: "Yetenekler", href: "/yetenekler" },
-    { id: 4, title: "Projelerim", href: "/projelerim" },
-    { id: 5, title: "Deneyim", href: "/deneyim" },
-    { id: 6, title: "Referanslarım", href: "/referanslarım" },
+    { id: 1, title: "Hakkında", link: "#about", href: "/hakkında" },
+    { id: 2, title: "Deneyim", link: "#experiences", href: "/deneyim" },
+    { id: 3, title: "Projelerim", link: "#projects", href: "/projelerim" },
+    { id: 4, title: "İletişim", link: "#contact", href: "/referanslarım" },
   ];
 
   return (
@@ -32,12 +30,14 @@ const Navbar = ({ isScroll }) => {
         <ol className="font-semibold text-black-lightest gap-6 hidden lg:flex">
           {menuItems.map((item) => (
             <li key={item.id}>
-              <Link
-                to={item.href}
+              <HashLink
+                to={item.link}
+                smooth={true}
+                duration={500} // 500ms sürede kaydırma
                 className="border-transparent hover:border-blue-dark hover:border-b-2 transition-all duration-100 ease-in-out hover:text-blue-dark"
               >
                 {item.title}
-              </Link>
+              </HashLink>
             </li>
           ))}
         </ol>
@@ -53,7 +53,7 @@ const Navbar = ({ isScroll }) => {
           <ol className="font-semibold text-black-lightest flex flex-col gap-2">
             {menuItems.map((item) => (
               <li key={item.id}>
-                <Link to={item.href}>{item.title}</Link>
+                <HashLink to={item.href}>{item.title}</HashLink>
               </li>
             ))}
           </ol>

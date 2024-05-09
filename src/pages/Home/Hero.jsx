@@ -34,11 +34,6 @@ const Hero = () => {
         </div>
       </div>
       <div className="bg-wave-pattern h-20 w-full"></div>
-      {/* <div className={`bg-[url("${Wave}")] h-20 w-full`}></div> */}
-      {/* <div
-        className="h-20 w-full"
-        style={{ backgroundImage: url(`${Wave}`) }}
-      ></div> */}
     </>
   );
 };

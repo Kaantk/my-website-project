@@ -4,7 +4,10 @@ import Teachering from "~/assets/images/teachering.svg";
 
 const Experiences = () => {
   return (
-    <div className="p-6 flex flex-col gap-5 lg:max-w-7xl mx-auto">
+    <div
+      id="experiences"
+      className="p-6 flex flex-col gap-5 lg:max-w-7xl mx-auto scroll-mt-16"
+    >
       {/* Title */}
       <div>
         <h2 className="font-semibold text-2xl text-center text-black-light">
