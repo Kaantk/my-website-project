@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { IoMenu } from "react-icons/io5";
 import { HashLink } from "react-router-hash-link";
+import Logo from "~/assets/images/static/KaanTetikLogo.svg";
 
 const Navbar = ({ isScroll }) => {
   const [isOpen, setIsOpen] = useState(false);
@@ -13,9 +14,9 @@ const Navbar = ({ isScroll }) => {
 
   return (
     <>
-      <nav className="flex items-center justify-between py-4 px-6 md:py-4 md:px-8 lg:py-5 max-w-7xl mx-auto">
+      <nav className="flex items-center justify-between py-3 px-6 md:py-3 md:px-8 max-w-7xl mx-auto">
         <a href="#" className="text-xl font-bold">
-          Logo
+          <img src={Logo} alt="Kaan Tetik Logo" className="w-20 md:w-24" />
         </a>
         {/* Mobile, Tablet Menu Button */}
         <button
