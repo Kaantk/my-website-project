@@ -114,7 +114,7 @@ const Contact = () => {
               </div>
               <div>
                 <span>
-                  Mail: <b>kaan.tk3@hotmail.com</b>
+                  Mail: <b>kaantetk@gmail.com</b>
                 </span>
               </div>
               <div>
