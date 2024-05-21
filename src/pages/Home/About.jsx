@@ -31,7 +31,7 @@ const About = () => {
             </div>
             <div>
               <span>
-                Adres: <b>Esenler / İstanbul</b>
+                Adres: <b>Şişli / İstanbul</b>
               </span>
             </div>
           </div>

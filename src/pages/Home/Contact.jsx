@@ -3,6 +3,7 @@ import { ErrorMessage, Field, Form, Formik } from "formik";
 import { ContactValidation } from "~/validations/ContactValidation";
 import { IoIosSend } from "react-icons/io";
 import classNames from "classnames";
+import axios from "axios";
 
 const Contact = () => {
   return (
@@ -20,8 +21,24 @@ const Contact = () => {
             message: "",
           }}
           onSubmit={(values, { resetForm }) => {
-            alert(JSON.stringify(values));
-            resetForm();
+            axios
+              .post("https://localhost:44396/Mail", {
+                fullName: values.fullName,
+                email: values.email,
+                message: values.message,
+              })
+              .then((response) => {
+                console.log(response.data);
+                alert("Mesajınız başarıyla gönderildi!");
+                resetForm();
+              })
+              .catch((error) => {
+                console.error("Gönderim sırasında bir hata oluştu:", error);
+                alert(
+                  "Mesaj gönderilirken bir hata oluştu, lütfen tekrar deneyin."
+                );
+                resetForm();
+              });
           }}
         >
           {({ isValid, dirty, isSubmitting }) => (
@@ -119,7 +136,7 @@ const Contact = () => {
               </div>
               <div>
                 <span>
-                  Adres: <b>Esenler / İstanbul</b>
+                  Adres: <b>Şişli / İstanbul</b>
                 </span>
               </div>
             </div>
